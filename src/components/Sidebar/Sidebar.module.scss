@@ -1,0 +1,26 @@
+.sidebar {
+    background-color: #52958B;
+    grid-area: s;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border-radius: 8px;
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+    }
+}
+
+.activeLink {
+    background-color: #004D47;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+
+
+
+

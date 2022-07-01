@@ -1,0 +1,38 @@
+header {
+    background-color: #004D47;
+    grid-area: h;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+.loginBlock {
+    margin-right: 20px;
+
+    a {
+        color: #fff;
+    }
+}
+
+.profileInfo {
+    color: #fff;
+}
+
+.logout {
+    margin-left: 12px;
+    text-decoration: underline;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

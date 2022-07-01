@@ -1,0 +1,44 @@
+.profile {
+    display: flex;
+}
+
+.profileLeft {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+    margin-right: 20px;
+}
+
+.profileRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.largePhoto {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.customUpload {
+    background-color: #52958B;
+    color: white;
+    display: block;
+    padding: 6px 12px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        background-color: #004D47;
+    }
+}

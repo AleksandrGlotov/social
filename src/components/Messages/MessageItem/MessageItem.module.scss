@@ -1,0 +1,16 @@
+.name {
+
+    a {
+        text-decoration: none;
+        color: black;
+        display: flex;
+        padding: 5px 10px;
+        width: 160px;
+    }
+}
+
+.activeDialog {
+    background-color: #b9c4c9;
+    border-radius: 4px;
+    font-weight: 500;
+}

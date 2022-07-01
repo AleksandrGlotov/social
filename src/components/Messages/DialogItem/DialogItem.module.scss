@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.dialog {
+    padding: 10px 16px;
+    background-color: #dfe8ec;
+    border-radius: 20px;
+    max-width: 400px;
+    white-space: normal;
+    margin-bottom: 8px;
+    align-self: flex-start;
+
+
+    &:nth-child(even) {
+
+        padding: 10px 16px;
+        background-color: #52958B;
+        color: white;
+        border-radius: 20px;
+        margin-bottom: 8px;
+        max-width: 400px;
+        white-space: normal;
+        align-self: flex-end;
+    }
+}

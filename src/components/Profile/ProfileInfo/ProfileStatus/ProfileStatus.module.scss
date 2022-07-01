@@ -1,0 +1,18 @@
+.statusText {
+    font-style: italic;
+    font-weight: 500;
+    position: relative;
+    margin-right: 4px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.edit:hover {
+    cursor: pointer;
+}
+
+.statusInput {
+    width: 100%;
+}

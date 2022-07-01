@@ -1,0 +1,39 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &.selected {
+            font-weight: 700;
+            padding: 2px 8px 3px;
+            background-color: #b9c4c9;
+            border-radius: 4px;
+        }
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+}
+
+.leftArrow {
+    display: inline-block;
+    background: url(../../../assets/images/angle-left-solid.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+}
+
+.rightArrow {
+    display: inline-block;
+    background: url(../../../assets/images/angle-right-solid.svg) no-repeat center;
+    width: 20px;
+    height: 20px;
+}
