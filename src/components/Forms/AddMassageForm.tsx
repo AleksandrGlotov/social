@@ -38,7 +38,7 @@ const AddMassageForm: React.FC = () => {
                <Field 
                    name={'newMessageText'}
                    type={'text'}
-                   placeholder={'start typing a message...'}
+                   placeholder={'Текст сообщения...'}
                />
                <button type={'submit'}>Send message</button>
             </Form>

@@ -25,11 +25,12 @@ export const GitTest: React.FC = () => {
     return (
         <div className={s.container}>
             <div className={s.leftSide}>
+                <h1>Поиск пользователей GitHub</h1>
                 <GitInput 
                     value={searchTerm}
                     onSubmit={(value:string) => {setSearchTerm(value)}}
                 />
-                <h4>Click on Login for more info</h4>
+                <h4>Кликни на логин для подробной информации</h4>
                 <GitList
                     searchTerm={searchTerm}
                     onUserSelect={setSelectedUser}

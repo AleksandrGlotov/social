@@ -14,7 +14,7 @@ const Header: React.FC = () => {
     const dispatch: AppDispatch = useDispatch()
 
     const logOut = () => {
-        dispatch(signOut)
+        dispatch(signOut())
     } 
 
     return (

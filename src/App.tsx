@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import './App.css';
 import Sidebar from './components/Sidebar/Sidebar';
 import {Routes, Route, HashRouter} from "react-router-dom";
-import Login from './components/Login/Login';
 import { connect } from 'react-redux';
 import { initializeApp } from './Redux/appReducer';
 import Preloader from './components/common/Preloader/Preloader';
@@ -11,6 +10,7 @@ import ProfileContainer from './components/Profile/ProfileContainer';
 import { AppStateType } from './Redux/redux-store';
 import { GitTest } from './components/GitTest/GitTest';
 import Header from './components/Header/Header';
+import { Login } from './components/Login/Login';
 
 //Lazy load
 const FriendsPage = React.lazy(() => import('./components/Friends/FriendsPage'));
@@ -30,9 +30,9 @@ class App extends React.Component<MapProps & DispatchProps> {
   
   render() {
 
-    if (!this.props.initialized) {
-      return <Preloader/>
-    } 
+    // if (!this.props.initialized) {
+    //   return <Preloader/>
+    // } 
 
     return (
       // HashRouter instead BrowserRouter for github pages
@@ -45,7 +45,7 @@ class App extends React.Component<MapProps & DispatchProps> {
               <Routes>
                 <Route path="/" element={<Navigate to={'/profile'} /> } />
                 {/* redirect for github pages */}
-                <Route path="/social" element={<Navigate to={'/profile'} /> } /> 
+                {/* <Route path="/social" element={<Navigate to={'/profile'} /> } />  */}
                 <Route path="/profile/:userId" element={<ProfileContainer />}/>
                 <Route path="/profile/" element={<ProfileContainer />}/>
                 <Route path="/friends/*" element={<FriendsPage />}/>

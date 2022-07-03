@@ -43,7 +43,7 @@ const AddPostForm: React.FC<AddPostFormType> = (props) => {
                <Field className={s.addMyPost}
                   name={'newPostText'}
                   as={'textarea'}
-                  placeholder={'start typing...'}
+                  placeholder={'Текст вашего нового поста'}
                />
                <ErrorMessage name="newPostText" component="span" className={s.info} />
                <button className={s.addPostButton} type={'submit'}>Add post</button>

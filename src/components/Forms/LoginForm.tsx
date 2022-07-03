@@ -11,7 +11,7 @@ const validationSchemaLoginForm = Yup.object().shape({
         .email('The email is incorrect')
         .required('Please enter your email'),
     password: Yup.string()
-        .min(6, "Password must be at least 6 characters")
+        .min(4, "Password must be at least 6 characters")
         .required("Password is required"),
 });
 
@@ -41,8 +41,8 @@ export const LoginForm : React.FC= () => {
     return (
         <Formik
             initialValues={{
-                email: "",
-                password: "",
+                email: "sashaglotoff@gmail.com",
+                password: "pvpgglolpvp",
                 rememberMe: false,
                 captcha: ""
             }}

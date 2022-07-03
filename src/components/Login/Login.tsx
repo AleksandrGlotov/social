@@ -5,7 +5,7 @@ import { Navigate } from 'react-router';
 import { AppStateType } from "../../Redux/redux-store";
 import { LoginForm } from "../Forms/LoginForm";
 
-const Login: React.FC = () => {
+export const Login: React.FC = () => {
 
     const isAuth = useSelector((state: AppStateType) => state.auth.isAuth)
 
@@ -20,5 +20,3 @@ const Login: React.FC = () => {
         </div>
     )
 }
-
-export default connect(null, {signIn}) (Login)
